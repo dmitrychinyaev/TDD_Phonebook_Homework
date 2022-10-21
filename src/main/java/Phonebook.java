@@ -1,6 +1,11 @@
-public class Phonebook {
+import java.util.Map;
+import java.util.TreeMap;
 
-    public boolean add(){
-        return false;
+public class Phonebook {
+    protected Map<String,String> phonebook = new TreeMap<>();
+
+    public int add(String name, String number){
+        phonebook.put(name,number);
+        return phonebook.size();
     }
 }
