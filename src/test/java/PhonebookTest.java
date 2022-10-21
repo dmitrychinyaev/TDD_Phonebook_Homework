@@ -68,6 +68,19 @@ public class PhonebookTest {
         assertEquals(expected,result);
     }
 
+    @Test
+    public void findByNumber(){
+        String name = "Anna";
+        String number = "89107775522";
+
+        String expected = "Anna";
+
+        sut.add(name, number);
+        String result = sut.findByNumber(number);
+
+        assertEquals(expected,result);
+    }
+
 
 }
 
