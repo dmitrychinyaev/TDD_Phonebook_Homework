@@ -19,4 +19,8 @@ public class Phonebook {
                 .filter(key -> number.equals(phonebook.get(key)))
                 .findFirst().get();
     }
+
+    public String printAllNames(){
+        return null;
+    }
 }

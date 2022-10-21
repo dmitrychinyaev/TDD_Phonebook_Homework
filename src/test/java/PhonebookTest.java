@@ -81,6 +81,27 @@ public class PhonebookTest {
         assertEquals(expected,result);
     }
 
+    @Test
+    public void printAllNames(){
+        String name1 = "Anna";
+        String number1 = "246";
+
+        String name2 = "Boris";
+        String number2 = "135";
+
+        String name3 = "Dima";
+        String number3 = "468";
+
+        String expected = "[Anna, Boris, Dima]";
+
+        sut.add(name1,number1);
+        sut.add(name2,number2);
+        sut.add(name3,number3);
+
+        String result = sut.printAllNames();
+        assertEquals(expected,result);
+    }
+
 
 }
 
