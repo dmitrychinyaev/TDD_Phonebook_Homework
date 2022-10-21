@@ -14,6 +14,9 @@ public class Phonebook {
     }
 
     public String findByNumber(String number){
-        return null;
+        return phonebook.keySet()
+                .stream()
+                .filter(key -> number.equals(phonebook.get(key)))
+                .findFirst().get();
     }
 }

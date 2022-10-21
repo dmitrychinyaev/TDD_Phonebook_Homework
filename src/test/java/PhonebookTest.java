@@ -19,7 +19,7 @@ public class PhonebookTest {
     @AfterEach
     public void finished() {
         System.out.println("Test completed");
-        //sut = null;
+        sut = null;
     }
 
     @AfterAll
