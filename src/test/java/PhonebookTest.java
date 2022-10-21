@@ -60,10 +60,10 @@ public class PhonebookTest {
         String name = "Kolya";
         String number = "89091234567";
 
-        String expected = "Kolya";
+        String expected = "89091234567";
 
         sut.add(name, number);
-        String result = sut.findByName(number);
+        String result = sut.findByName(name);
 
         assertEquals(expected,result);
     }

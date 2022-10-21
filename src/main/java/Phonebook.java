@@ -10,6 +10,6 @@ public class Phonebook {
     }
 
     public String findByName(String number){
-        return null;
+        return phonebook.get(number);
     }
 }
